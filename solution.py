@@ -11,6 +11,6 @@ def solution(x: np.array, y: np.array) -> bool:
     # Не меняйте название функции и её аргументы
     alpha = 0.02
     pval = stats.anderson_ksamp([x, y]).pvalue
-    return pvalue < alpha
+    return pval < alpha
     
   
